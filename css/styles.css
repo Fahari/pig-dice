@@ -1,10 +1,10 @@
 .dice {
   float:left;
 	width:32px;
-	background:#F5F5F5;
+	background:#F2F2F2;
 	border:#999 1px solid;
-	padding:10px;
+	padding:auto;
 	font-size:24px;
 	text-align:center;
-	margin:5px;
+	margin:8px;
 }
