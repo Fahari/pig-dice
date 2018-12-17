@@ -24,3 +24,13 @@
       color: #2ecc71;
       margin-bottom: 130px;
   }
+  .players{
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+
+  font-weight: 100;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
