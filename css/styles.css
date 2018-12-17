@@ -1,0 +1,26 @@
+.col-md-5{
+  display: block;
+  background-color: blue
+}
+
+.col-md-2{
+  display: block;
+  background-color: purple
+}
+
+.player1-scores
+  {
+      text-align: center;
+      font-size: 80px;
+      font-weight: 100;
+      color: #EB4D4D;
+      margin-bottom: 130px;
+  }
+.player2-scores
+  {
+      text-align: center;
+      font-size: 80px;
+      font-weight: 100;
+      color: #2ecc71;
+      margin-bottom: 130px;
+  }
