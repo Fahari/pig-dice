@@ -2,8 +2,8 @@ $(document).ready(function() {
   $(".btn-new").click(function() {
     // Put condition when new game button is clicked
     //reset value to 0 and default
-  //reset();
-  alert("hello");
+  reset();
+  //alert("hello");
   });
 
   $(".btn-roll-1").click(function() {
@@ -138,29 +138,67 @@ function score1(){
   $("#score1").text(fin1);
   $("#output1").hide();
 
+  if(fin1 >= 100){
+    alert("PLAYER 1 WINS!!!");
+    $('#player1').text(zero);
+    $('#player2').text(zero);
+    $('#score1').text(zero);
+    $('#score2').text(zero);
+    $(".btn-roll-1").show();
+    $(".btn-hold-1").show();
+    $(".btn-roll-2").hide();
+    $(".btn-hold-2").hide();
+  }else{
+      $("#score1").text(fin1);
+      $("#output1").hide();
+      $("#output2").hide();
+
+  }
 };
 function score2(){
 
   var yipee2 = parseInt($('#player2').text());
   var scoreS2 = parseInt($('#score2').text());
-  ////////////////////
   var fin2 = addscore(yipee2,scoreS2);
-  $("#score2").text(fin2);
-  $("#output2").hide();
 
+  if(fin2 >= 100){
+    var zero = 0;
+    alert("PLAYER 2 WINS!!!");
+    $('#player1').text(zero);
+    $('#player2').text(zero);
+    $('#score1').text(zero);
+    $('#score2').text(zero);
+    $(".btn-roll-1").show();
+    $(".btn-hold-1").show();
+    $(".btn-roll-2").hide();
+    $(".btn-hold-2").hide();
+
+
+  }else{
+    $("#score2").text(fin2);
+    $("#output2").hide();
+    $("#output1").hide();
+
+  }
 };
 
 function addscore(num1,num2){
 var yy= num1+num2;
 return yy;
 };
- function scores3(){
-   var totalResults1 = $('#player1').text();
-   var totalResults2= $('#player2').text();
 
-   var totalScores = totalResults1 + totalResults2;
- }
-
+function reset() {
+  $("#player1").val(0);
+  $("#player2").val(0);
+  $("#score1").val(0);
+  $("#score2").val(0);
+  $("#output1").hide();
+  $("#output2").hide();
+  $(".btn-roll-2").hide();
+  $(".btn-hold-2").hide();
+  $(".btn-roll-1").show();
+  $(".btn-hold-1").show();
+}
 
 
 // another function to add rolled value and score to total points
