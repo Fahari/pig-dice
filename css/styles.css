@@ -95,6 +95,7 @@ button:focus {
 
 .btn-roll-2 {
   top: 430px;
+  display:none;
 }
 
 .btn-hold-1 {
@@ -103,4 +104,5 @@ button:focus {
 
 .btn-hold-2 {
   top: 485px;
+  display:none;
 }
