@@ -1,9 +1,6 @@
-#output1,#output2
-{
+#output1, #output2 {
   display: none;
 }
-
-
 
 .player1,
 .player2 {
@@ -77,13 +74,18 @@ button {
   font-weight: 300;
   transition: background-color 0.3s, color 0.3s;
 }
-button:hover { font-weight: 600; }
-button:hover i { margin-right: 20px; }
 
-button:focus {
-    outline: none;
+button:hover {
+  font-weight: 600;
 }
 
+button:hover i {
+  margin-right: 20px;
+}
+
+button:focus {
+  outline: none;
+}
 
 .btn-game {
   top: 105px;
@@ -95,7 +97,7 @@ button:focus {
 
 .btn-roll-2 {
   top: 430px;
-  display:none;
+  display: none;
 }
 
 .btn-hold-1 {
@@ -104,5 +106,5 @@ button:focus {
 
 .btn-hold-2 {
   top: 485px;
-  display:none;
+  display: none;
 }
