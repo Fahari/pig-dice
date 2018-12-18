@@ -35,21 +35,21 @@ function diceRoll() {
     //
     // //$("#player1-total").html("You have rolled " + random);
     // //alert(currentPlayer1);
-    // $("#output1").show();
-    // $("#output1").text(random);
+     $("#output1").show();
+     $("#output1").text(random);
     // document.getElementById('player1').getAttribute('data-value') = 0;
-    var current1 =document.getElementById('player1').getAttribute('data-value');
-    //alert(current1);
+    var current1 = parseInt($('#player1').text());
+        //alert(current1);
      addTotal1(current1,random);
-     var result1 = addTotal1();
-     $("#player1").text(result1);
+     //var result1 = addTotal1();
+
 
   }
 };
 //
 function addTotal1(num1,num2){
-return num1+num2;
-
+var xx= num1+num2;
+$("#player1").text(xx);;
  };
 //
 
