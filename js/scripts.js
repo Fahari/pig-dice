@@ -20,7 +20,7 @@ $(document).ready(function() {
     //  alert("hello there");
   });
 
-  $('.btn-hold').click(function() {
+  $('.btn-hold-1').click(function() {
     // Put condition when hold button is clicked
     //Allocate points
 
@@ -28,11 +28,16 @@ $(document).ready(function() {
     score1();
     var default0 =0;
     $("#player1").text(default0);
+
+  });
+    $('.btn-hold-1').click(function() {
+
+
     score2();
     var default2 =0;
     $("#player2").text(default2);
 });
-});
+
 
 //   });
 //

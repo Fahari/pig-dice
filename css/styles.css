@@ -97,6 +97,10 @@ button:focus {
   top: 430px;
 }
 
-.btn-hold {
-  top: 467px;
+.btn-hold-1 {
+  top: 459px;
+}
+
+.btn-hold-2 {
+  top: 485px;
 }
