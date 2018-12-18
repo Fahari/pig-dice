@@ -1,21 +1,44 @@
-# {Application Name}
-#### {Brief description of application}, {Date of current version}
-#### By **{List of contributors}**
+# Pig-Dice
+#### Pig dice is a simple game of dice, played by 2 players and having multiple game variations where the goal is to roll the most points against your opponent.
+18/Dec/2018
+#### By **Kironji Kevin**
 ## Description
-{This is a detailed description of your application, including its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }
-## Setup/Installation Requirements
-* This is a great place
-* to list setup instructions
-* in a simple
-* easy-to-understand
-* format
-{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? Do I need to install any dependencies? How should I set up my databases? Is there other code this app depends on?}
+Pig is a simple dice game which in its basic form is playable with just a single die. You win by being the first player to score 100 or more points.
+To play you'll need 2 to 10 players, one 6-sided dice, and a pencil and some paper for keeping score.
+Choose a player to go first. That player throws a die and scores as many points as the total shown on the die providing the die doesn't roll a 1. The player may continue rolling and accumulating points (but risk rolling a 1) or end his turn.
+If the player rolls a 1 his turn is over, he loses all points he accumulated that turn, and he passes the die to the next player.
+Play passes from player to player until a winner is determined.
+
+The first player to accumulate 100 or more points wins the game.
+## Prerequisites
+You need to have git installed.You can install git using the following command in your terminal $ sudo apt install git-all -y
+## Setup
+1. Open your terminal
+2. Use this command $ git clone https://github.com/Fahari/pig-dice This will clone the projects repository into a local folder on your device.
+3. Open the files with an editor( preferably Atom. )
+4. Study the code. learn from it. Improve on it.
 ## Known Bugs
-{Are there issues that have not yet been resolved that you want to let users know you know? Outline any issues that would impact use of your application. Share any workarounds that are in place. }
+As of the completion of this project 13/Dec/2018, NO bugs were present.
 ## Technologies Used
-{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}
+1. Atom
+2. HTML
+3. CSS
+4. JavaScript
+5. git
+## Behaviour Driven Development
+| Behaviour   |      Input      |  Result(output) |
+|----------|:-------------:|------:|
+| User rolls a 2 |  2 is added to the score | 2 |
+| User rolls a 3 |  3 is added to the score | 3 |
+| User rolls a 4 |  4 is added to the score | 4 |
+| User rolls a 5 |  5 is added to the score | 5 |
+| User rolls a 6 |  6 is added to the score | 6 |
+| User rolls a 1 |  Loses the round score and loses their turn | 0 |
+| User reaches 100 |  100 | Winner!! |
+## Site
+You can access the live project at https://fahari.github.io/pig-dice/
 ## Support and contact details
-{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}
+Have a question? Want to report a bug? feeling philanthropic? want to buy some beans? drop a suggestion or comment at karonjekevin67@gmail.com
 ### License
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
-Copyright (c) {year} **{List of contributors or company name}**
+This project is under the [MIT](https://github.com/Fahari/pig-dice/blob/master/LICENSE) license. Feel free to study and use the code.
+Copyright (c) 2018 **Kironji Kevin**
