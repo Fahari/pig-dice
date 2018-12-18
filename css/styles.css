@@ -1,3 +1,10 @@
+#output1,#output2
+{
+  display: none;
+}
+
+
+
 .player1,
 .player2 {
   width: 50%;
@@ -77,15 +84,6 @@ button:focus {
     outline: none;
 }
 
-i {
-    display: inline-block;
-    margin-right: 15px;
-    font-size: 32px;
-    line-height: 1;
-    vertical-align: text-top;
-    margin-top: -4px;
-    transition: margin 0.3s;
-}
 
 .btn-game {
   top: 105px;
