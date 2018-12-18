@@ -1,22 +1,39 @@
 $(document).ready(function() {
-  $(".btn-game").click(function() {
+  $(".btn-new").click(function() {
     // Put condition when new game button is clicked
     //reset value to 0 and default
   //reset();
   alert("hello");
   });
 
-  $(".btn-roll").click(function() {
+  $(".btn-roll-1").click(function() {
     // Put condition when dice is rolled / clicked
     //function to generate random numbers
      diceRoll();
     //  alert("hello there");
   });
- });
-//   $('.btn-hold').click(function() {
-//     // Put condition when hold button is clicked
-//     //Allocate points
-//
+
+  $(".btn-roll-2").click(function() {
+    // Put condition when dice is rolled / clicked
+    //function to generate random numbers
+     diceRoll2();
+    //  alert("hello there");
+  });
+
+  $('.btn-hold').click(function() {
+    // Put condition when hold button is clicked
+    //Allocate points
+
+    //alert("text");
+    score1();
+    var default0 =0;
+    $("#player1").text(default0);
+    score2();
+    var default2 =0;
+    $("#player2").text(default2);
+});
+});
+
 //   });
 //
 //
@@ -29,8 +46,10 @@ function diceRoll() {
   var random = Math.floor(Math.random() * 6) + 1;
 
   if (random === 1) {
+    var default0 =0;
     $("#output1").show();
     $("#output1").text("Sorry!You have rolled a 1. Player 2's turn!");
+    $('#player1').text(default0);
   } else {
     //
     // //$("#player1-total").html("You have rolled " + random);
@@ -46,13 +65,56 @@ function diceRoll() {
 
   }
 };
+
+function diceRoll2() {
+  var random2 = Math.floor(Math.random() * 6) + 1;
+
+  if (random2 === 1) {
+    var default2 =0;
+    $("#output2").show();
+    $("#output2").text("Sorry!You have rolled a 1. Player 1's turn!");
+    $('#player2').text(default2);
+  } else {
+    //
+    // //$("#player1-total").html("You have rolled " + random);
+    // //alert(currentPlayer1);
+     $("#output2").show();
+     $("#output2").text(random2);
+    // document.getElementById('player1').getAttribute('data-value') = 0;
+    var current2 = parseInt($('#player2').text());
+        //alert(current1);
+     addTotal2(current2,random2);
+     //var result1 = addTotal1();
+
+
+  }
+};
+
+
 //
 function addTotal1(num1,num2){
 var xx= num1+num2;
-$("#player1").text(xx);;
+$("#player1").text(xx);
  };
-//
+ function addTotal2(num1,num2){
+ var yy= num1+num2;
+ $("#player2").text(yy);
+  };
 
+function score1(){
+
+  var yipee = parseInt($('#player1').text());
+  $("#score1").text(yipee);
+  $("#output1").hide();
+
+};
+function score2(){
+
+  var yipee = parseInt($('#player2').text());
+  $("#score2").text(yipee);
+  $("#output2").hide();
+
+};
 // another function to add to scores
 
 
