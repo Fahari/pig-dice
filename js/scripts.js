@@ -9,8 +9,8 @@ $(document).ready(function() {
   $(".btn-roll").click(function() {
     // Put condition when dice is rolled / clicked
     //function to generate random numbers
-      function diceRoll();
-      //alert("hello there");
+     diceRoll();
+    //  alert("hello there");
   });
  });
 //   $('.btn-hold').click(function() {
@@ -25,20 +25,32 @@ $(document).ready(function() {
 // //Business Logic
 //
 // //create function to generate random numbers
-function diceRoll(){
+function diceRoll() {
   var random = Math.floor(Math.random() * 6) + 1;
 
-  if(random ===1){
-    $("#output").html("Sorry!You have rolled a 1. Player's 2 turn!");
-    $("#player1-total").val(); = 0;
-  }else{
-    var currentPlayer1 = parseInt($("#player1-total").val(););
-    addTot1(currentPlayer, random);
-    //$("#player1-total").html("You have rolled " + random);
-    alert(currentPlayer1);
+  if (random === 1) {
+    $("#output1").show();
+    $("#output1").text("Sorry!You have rolled a 1. Player 2's turn!");
+  } else {
+    //
+    // //$("#player1-total").html("You have rolled " + random);
+    // //alert(currentPlayer1);
+    // $("#output1").show();
+    // $("#output1").text(random);
+    // document.getElementById('player1').getAttribute('data-value') = 0;
+    var current1 =document.getElementById('player1').getAttribute('data-value');
+    //alert(current1);
+     addTotal1(current1,random);
+     var result1 = addTotal1();
+     $("#player1").text(result1);
+
   }
 };
+//
+function addTotal1(num1,num2){
+return num1+num2;
 
+ };
 //
 
 // another function to add to scores
